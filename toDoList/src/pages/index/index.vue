@@ -1,25 +1,49 @@
-<script setup>
-import { ref } from 'vue'
-import './index.css'
-
-const msg = ref('Hello world!')
-</script>
-
 <template>
-  <view class="index">
-    <text>{{ msg }}</text>
+  <view class="content">
+    <image class="logo" src="/static/logo.png" />
+    <view class="text-area">
+      <text class="title">{{ title }}</text>
+    </view>
   </view>
-  <view>
-    <van-button type="primary">Button</van-button>
-  </view>
-  <view class="tab-box">
-    <router-link class="tab-item" to="/timeLine" replace>TimeLine</router-link>
-  </view>
-  <router-view></router-view>
 </template>
 
+<<<<<<< HEAD
 <script setup>
 import { ref } from 'vue'
 import './index.css'
 let msg = "振炫：这美女我要了"
 </script>
+=======
+<script setup lang="ts">
+import { ref } from 'vue'
+const title = ref('Hello')
+</script>
+
+<style>
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 200rpx;
+  width: 200rpx;
+  margin-top: 200rpx;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50rpx;
+}
+
+.text-area {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 36rpx;
+  color: #8f8f94;
+}
+</style>
+>>>>>>> bc7845961dcdcc1358223b962e85b89f52f721bd

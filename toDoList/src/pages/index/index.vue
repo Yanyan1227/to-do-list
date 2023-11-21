@@ -7,13 +7,6 @@
   </view>
 </template>
 
-<<<<<<< HEAD
-<script setup>
-import { ref } from 'vue'
-import './index.css'
-let msg = "振炫：这美女我要了"
-</script>
-=======
 <script setup lang="ts">
 import { ref } from 'vue'
 const title = ref('Hello')
@@ -46,4 +39,3 @@ const title = ref('Hello')
   color: #8f8f94;
 }
 </style>
->>>>>>> bc7845961dcdcc1358223b962e85b89f52f721bd
